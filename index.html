@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src= "interactions.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header class="nav-bar">
+    <h3 class="nav-item">VACATION RENTALS</h3>
+    <h3 class="nav-item">THE AREA</h3>
+    <img id="logo" src="https://odessabythesea.com/wp-content/uploads/2022/02/logo.png" alt="">
+    <h3 class="nav-item">WEDDINGS/GROUPS</h3>
+    <h3 class="nav-item">RESERVATIONS</h3>
+</header>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img class="slider-image" src="https://odessabythesea.com/wp-content/uploads/2022/02/thingstodotop.jpg.webp" alt="">
+                <div id="slider-text">
+                    <h1 class="slider-heading">Join Us In</h1>
+                    <p class="slider-subheading">Old Orchard Beach</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slider-image" src="https://a0.muscache.com/im/pictures/miso/Hosting-625934074210918385/original/d7bd3d7f-6fc3-43ee-bf00-411d3b623dc0.jpeg?ml=true%3Faki_policy%3Dlarge&im_w=1200" alt="">
+                <div id="slider-text">
+                    <h1 class="slider-heading">Maine's</h1>
+                    <p class="slider-subheading">Premier Beach Town</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slider-image" src="https://odessabythesea.com/wp-content/uploads/2022/02/cottages2.jpg.webp" alt="">
+                <div id="slider-text">
+                    <h1 class="slider-heading">Stay in</h1>
+                    <p class="slider-subheading">Cozy Cottages</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slider-image" src="https://media.vrbo.com/lodging/60000000/59870000/59861500/59861453/29ec3472.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="">
+                <div id="slider-text">
+                    <h1 class="slider-heading">or Luxurious</h1>
+                    <p class="slider-subheading">Beach Homes</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slider-image" src="https://harborwatch.com/wp-content/uploads/2018/04/maine-portland-maine-img.jpg" alt="">
+                <div id="slider-text">
+                    <h1 class="slider-heading">Conveniently Located Near</h1>
+                    <p class="slider-subheading">Maine's Top Attractions</p>
+                </div>
+            </div>
+         </div>
+         <button id="next" onclick="changeSlide(1)">
+            <img src="right.png" alt="" class="slider-buttons">
+         </button>
+         <button id="prev" onclick="changeSlide(-1)">
+            <img src="left.png" alt="" class="slider-buttons">
+         </button>
+    </div>
+    
+    <div class="spacer">
+    </div>
+    <img id="background-image" src="background-image.png" alt="">
+    <div id="welcome">
+    <h2 class="welcome_text">WELCOME TO</h2>
+    <h1 class="welcome_text">Odessa by the Sea</h1>
+    <div id="info">
+        <p>
+        Odessa by the Sea is your source for the best in Old Orchard Beach Maine lodging. Come to relax, or be as busy as you choose and enjoy seven uninterrupted miles of sandy beaches. Our vacation rentals, located in one of America’s most beloved seaside villages, are perfectly situated so you can re-discover the natural beauty and unhurried pace of Old Orchard Beach, Maine. There’s lots to see and do, great restaurants, and perfect accommodations from Odessa by the Sea to enjoy it all from.
+        </p>
+        <p>
+        Choose from one of our cozy cottages that sleep 2-6, or luxurious homes that sleep 10-24. Rent several together for even larger groups. The Cottages, Odessa Victorian and Odena Beach House are located near each other and together sleep up to 65 guests – perfect for a destination wedding, retreat or reunion. Whatever brings you to Old Orchard Beach Maine, our lodgings make for the quintessential seaside escape.
+        </p>
+    </div>
+        <h3 class="welcome_text">
+        Begin the Journey, explore our Old Orchard Beach Lodging:
+    </h3>
+    </div>
+    <div id="four-columns">
+        <div class="flip-box">
+            <div class="one-column">
+                <img class="image-column" id="cottages" src="https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/279304838_108262341871629_6032877264972568461_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JXZ7RTL_v9YQ7kNvgFFKSv9&_nc_ht=scontent-mia3-1.xx&_nc_gid=ArnhjXDbEPA8zW8AVBROxHe&oh=00_AYDaFwpsmmQ4_hamCVA79DMSYGxu6FY9IkeYmfdZC8Iwmg&oe=67037A35" alt="">
+                <h2 class="column-heading">COTTAGES</h2>
+            </div>
+            <div class="one-column-overlay">
+                <img class="image-column-overlay" id="cottages" src="https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/279304838_108262341871629_6032877264972568461_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JXZ7RTL_v9YQ7kNvgFFKSv9&_nc_ht=scontent-mia3-1.xx&_nc_gid=ArnhjXDbEPA8zW8AVBROxHe&oh=00_AYDaFwpsmmQ4_hamCVA79DMSYGxu6FY9IkeYmfdZC8Iwmg&oe=67037A35" alt="">
+                <h3 class="column-subheading-top">The Odessa</h3>
+                <h2 class="column-heading">COTTAGES</h2>
+                <h3 class="column-subheading-bottom">1 & 2 bedroom cottages, sleep 2-6 </h3>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="one-column">
+                <img class="image-column" id="odessa" src="https://a0.muscache.com/im/pictures/miso/Hosting-53940661/original/572e22a4-d804-4b16-bc44-162d9354200f.jpeg?ml=true&im_w=1200" alt="">
+                <h2 class="column-heading">ODESSA</h2>
+            </div>
+            <div class="one-column-overlay">
+                <img class="image-column-overlay" id="odessa" src="https://a0.muscache.com/im/pictures/miso/Hosting-53940661/original/572e22a4-d804-4b16-bc44-162d9354200f.jpeg?ml=true&im_w=1200" alt="">
+                <h3 class="column-subheading-top">The</h3>
+                <h2 class="column-heading">ODESSA</h2>
+                <h3 class="column-subheading-bottom">5 bedroom Victorian house, sleeps up to 16</h3>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="one-column">
+                <img class="image-column" id="odena" src="https://odessabythesea.com/wp-content/uploads/2022/02/odenatop.jpg.webp" alt="">
+                <h2 class="column-heading">ODENA</h2>
+            </div>
+            <div class="one-column-overlay">
+                <img class="image-column-overlay" id="odena" src="https://odessabythesea.com/wp-content/uploads/2022/02/odenatop.jpg.webp" alt="">
+                <h3 class="column-subheading-top">The</h3>
+                <h2 class="column-heading">ODENA</h2>
+                <h3 class="column-subheading-bottom">6 bedroom beach house, sleeps up to 24</h3>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="one-column">
+                <img class="image-column" id="morrison" src="https://odessabythesea.com/wp-content/uploads/2022/02/morrisontop2.jpg.webp" alt="">
+                <h2 class="column-heading">MORRISON</h2>
+            </div>
+            <div class="one-column-overlay">
+                <img class="image-column-overlay" id="morrison" src="https://odessabythesea.com/wp-content/uploads/2022/02/morrisontop2.jpg.webp" alt="">
+                <h3 class="column-subheading-top">The</h3>
+                <h2 class="column-heading">MORRISON</h2>
+                <h3 class="column-subheading-bottom">2, 3, or 5 bedroom, sleeps 10-24 guests</h3>
+            </div>
+        </div>
+    </div>
+    <div id="two-column">
+    <div class="two_column-section">
+        <div class="grid_item">
+        <h1>
+            Getaway to the Seaside
+        </h1>
+        <p class="text1">
+            Take a stroll on the beach to The Pier or to Ocean Park and savor a variety of cuisine, enjoy the fireworks on the beach each Thursday evening, browse the shops, or sit back and watch the entertainment of Old Orchard Beach, Maine. You’ll find classic seaside amusements, deep sea fishing, whale watching, golf, shops and much more, in addition to the 7 miles of sandy beach waiting for you. Old Orchard Beach is also within a short drive to Portland, Freeport, Kennebunkport, and Ogunquit – making Old Orchard Beach the perfect Maine destination.
+        </p>
+        <button>
+            DISCOVER THE AREA
+        </button>
+        </div>
+        <img src="https://i0.wp.com/eastcoastmermaid.com/wp-content/uploads/2016/09/East-Coast-Summer-Series-Old-Orchard-Beach-Maine.jpg?w=1200&ssl=1" alt="">
+    </div>
+    <div class="two_column-section">
+        <img src="https://urbanstmagazine.com/wp-content/uploads/2020/02/p8iS_CoupleOnBeach.jpg" alt="">
+        <div class="grid_item">
+        <h1>
+            Weddings & Groups
+        </h1>
+        <p class="text1">
+            Our vacation rentals are the ideal setting for an intimate beach wedding, corporate retreat, or family reunion. 3 properties, the Odessa Cottages, Odessa Victorian, and the Odena Beach House can accommodate up to 65 guests when rented together. Individually they sleep 2-24, making Odessa by the Sea Vacation Rentals and Cottages easy to customize to your specific group needs.
+        </p>
+        <button>
+            WEDDINGS AND GROUPS
+        </button>
+        </div>
+    </div>
+    <div class="two_column-section">
+        <div class="grid_item">
+        <h1>
+            Join us!
+        </h1>
+        <h3>
+            For Old Orchard Beach Lodging
+        </h3>
+        <p class="text1">
+            Come get the sand between your toes, watch the sunset, fly a kite, renew friendships or rekindle a romance. With our wide variety of Old Orchard Beach Lodging, you’re sure to find the perfect choice with Odessa by the Sea Vacation Rentals & Cottages. Check Availability and Book Today!
+        </p>
+        <button>
+            CHECK AVAILABILITY
+        </button>
+        </div>
+        <img src="https://mdsolarsciences.com/cdn/shop/articles/BlogHed_ReefSafe_17135e15-4594-4fb7-96e4-13e92cd16bb4.jpg?v=1598063812&width=2000" alt="">
+    </div>
+    </div>
+    <div class="spacer">
+    </div>
+    <div id="footer">
+        <div id="left-footer">
+            <p class="footer-heading">Recent Posts</p>
+            <ul id="post-list">
+                <li>2022 Season’s End at Odessa By The Sea</li>
+                <li>Get Out on a Maine Lobster Boat Tour</li>
+                <li>Odessa By The Sea – First Season Reviews</li>
+            </ul>
+        </div>
+        <div id="right-footer">
+            <p class="footer-heading">Odessa by the Sea</p>
+            <p class="footer-text">3 Odessa Ave</p>
+            <p class="footer-text">Old Orchard Beach, Maine 04064</p>
+            <p class="footer-text">Phone: (207) 934-1081</p>
+            <p class="footer-text">Email: info@odessabythesea.com</p>
+        </div>
+    </div>
+    </body>
+</html>
